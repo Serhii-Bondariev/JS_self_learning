@@ -1,12 +1,32 @@
 "use strict";
 
 
-// CODE
+; // CODE
 
 
-// Використовуючи змінні, необхідно скласти рядок з підставленими значеннями
-const guestName = "Манго";
-const roomNumber = 207;
-const greeting =
-  "Welcome " + guestName + ", your room number is " + roomNumber + "!";
-console.log(greeting); // "Welcome Mango, your room number is 207!"
+; // Використовуючи змінні, необхідно скласти рядок з підставленими значеннями
+; const guestName = "Манго";
+; const roomNumber = 207;
+; const greeting =
+;   "Welcome " + guestName + ", your room number is " + roomNumber + "!";
+; console.log(greeting); // "Welcome Mango, your room number is 207!"
+
+
+const clients = ["Mango", "Poly", "Ajax"];
+const clientNameToFind = "Poly";
+let message;
+
+for (const client of clients) {
+  // На кожній ітерації будемо перевіряти чи збігається елемент масиву з
+  // іменем клієнта. Якщо збігається - записуємо в message повідомлення
+  // про успіх і робимо break, щоб далі не шукати
+  if (client === clientNameToFind) {
+    message = "Клієнт з таким ім'ям є в базі даних!";
+    break;
+  }
+
+  // Якщо вони не збігаються - записуємо в message повідомлення про відсутність імені
+  message = "Клієнт з таким ім'ям відсутній в базі даних!";
+}
+
+console.log(message); // "Клієнт з таким ім'ям є в базі даних!"
