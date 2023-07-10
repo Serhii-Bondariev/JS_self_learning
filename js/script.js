@@ -28,7 +28,6 @@
 // const message = `You picked ${productName}, price per item is ${pricePerItem} credits`
 // console.log (message);
 
-
 // const pricePerDroid = 800;
 // const orderedQuantity = 6;
 // const deliveryFee = 50;
@@ -72,8 +71,6 @@
 // }
 
 // console.log(cost); // 500
-
-
 
 // const global = "global";
 
@@ -124,25 +121,33 @@
 // console.log(blockA); // ReferenceError: blockA is not defined
 // console.log(blockB); // ReferenceError: blockB is not defined
 // console.log(blockC); // ReferenceError: blockC is not defined
+function createBasket(product, quantity, price) {
+  return { product, quantity, price, totalPrice: quantity * price };
+}
+console.log(createBasket("pizza", 3, 120));
+console.log(createBasket("apple", 13, 1200));
 
+const friends = [
+  { name: "Anna", books: ["Bible", "Harry potter"], age: 21 },
+  { name: "Bob", books: ["War and Peace", "Rome and Juliet"], age: 26 },
+  { name: "Alice", books: ["Bible", "War and Peace", "Harry potter"], age: 65 },
+  {
+    name: "John",
+    books: ["Bible", "War and Peace", "Rome and Juliet", "Harry potter"],
+    age: 23,
+  },
+];
 
-// const value = 10;
+function getUserNames(users, bookName) {
+  const userNames = [];
 
-// if (value === 10) {
-//   console.log("condition is true")
-// } else {
-// console.log("condition is false")
-// }
+  for (const user of users) {
+    if (user.books.includes(bookName)) {
+      userNames.push(user.name);
+    }
+  }
 
-function multiply(x, y, z) {
-  console.log(`Результат множення дорівнює ${x * y * z}`);
+  return userNames.join(", ");
 }
 
-console.log("Лог до виклику функції multiply");
-multiply(2, 3, 5); // Результат множення дорівнює 30
-console.log("Лог після виклику функції multiply");
-
-// Послідовність логів в консолі
-// "Лог до виклику функції multiply"
-// "Результат множення дорівнює 30"
-// "Лог після виклику функції multiply"
+console.log(getUserNames(friends, "Harry Potter"));
