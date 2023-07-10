@@ -122,14 +122,6 @@
 // console.log(blockB); // ReferenceError: blockB is not defined
 // console.log(blockC); // ReferenceError: blockC is not defined
 
-// const value = 10;
-
-// if (value === 10) {
-//   console.log("condition is true")
-// } else {
-// console.log("condition is false")
-// }
-
 // function multiply(x, y, z) {
 //   console.log(`Результат множення дорівнює ${x * y * z}`);
 // }
@@ -252,5 +244,3 @@
 // }
 // console.log(getReactArea(`8 11`));
 // console.log(getReactArea(`15 11`));
-
-
