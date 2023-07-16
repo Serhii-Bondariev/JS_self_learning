@@ -244,3 +244,151 @@
 // }
 // console.log(getReactArea(`8 11`));
 // console.log(getReactArea(`15 11`));
+<<<<<<< Updated upstream
+=======
+
+// function sayHi() {
+//   console.log("Hello, this is my first function!");
+// }
+// sayHi();
+
+// function add(a, b, c) {
+//   console.log(`Addition result equals ${a + b + c}`);
+// }
+
+// add(15, 27, 10);
+// add(10, 20, 30);
+// add(5, 10, 15);
+
+// function makeMessage(name, price) {
+//   // Change code below this line
+//   makeMessage(name, price);
+
+//   const message = `You picked ${name}, price per item is ${price} credits`;
+//   // Change code above this line
+//   makeMessage("Scanner", 3500);
+//   makeMessage("Reactor", 8000);
+//   makeMessage("Engine", 4070);
+//   return message;
+// }
+
+// function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+//   // Change code below this line
+//   const orderedQuantity = 1;
+//   const pricePerDroid = 50;
+//   const deliveryFee = 50;
+//   const totalPrice = orderedQuantity * pricePerDroid + deliveryFee;
+//   const message = `You ordered droids worth ${totalPrice} credits. Delivery ${deliveryFee} credits is included in total price.`;
+
+//   // Change code above this line
+//   return message;
+// }
+
+// function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee) {
+//   // Change code below this line
+// // orderedQuantity = 1
+// //   pricePerDroid = 50
+// //   deliveryFee = 50
+// //   const totalPrice = orderedQuantity * pricePerDroid + deliveryFee;
+//   const message = `You ordered droids worth ${totalPrice} credits. Delivery ${deliveryFee} credits is included in total price.`;
+
+// makeOrderMessage(2, 100, 50)
+//   makeOrderMessage(4, 300, 100)
+//   makeOrderMessage(10, 70, 200)
+//   // Change code above this line
+//   return message;
+// }
+
+// function makeOrderMessage(orderedQuantity, pricePerDroid, deliveryFee){
+
+//     totalPrice = orderedQuantity * pricePerDroid + deliveryFee;
+
+//     message = `You ordered droids worth ${totalPrice} credits. Delivery (${deliveryFee} credits) is included in total price.`
+//     return message;
+// }
+
+// function isAdult(age) {
+//   // Change code below this line
+//   const passed = age >= 18;
+
+//   // Change code above this line
+//   return passed;
+// }
+
+// function checkStorage(available, ordered) {
+//   let message;
+//   if (ordered > available) {
+//     message = "Not enough goods in stock!";
+//   } else {
+//     message = "Order is processed, our manager will contact you.";
+//   }
+//   return message;
+// }
+
+// function makeTransaction(pricePerDroid, orderedQuantity, customerCredits) {
+//   let message;
+//   // Change code below this line
+//   const totalPrice = pricePerDroid * orderedQuantity;
+//   if (totalPrice > customerCredits) {
+//     message = "Insufficient funds!";
+//   } else {
+//     const creditsLeft = customerCredits - totalPrice;
+//     message = `You ordered ${orderedQuantity} droids, you have ${creditsLeft} credits left`;
+//   }
+
+//   // Change code above this line
+//   return message;
+// }
+
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   let message;
+
+//   if (password === null) {
+//     // Change this line
+//     message = "Canceled by user!";
+//   } else if (password === ADMIN_PASSWORD) {
+//     // Change this line
+//     message = "Welcome!";
+//   } else {
+//     message = "Access denied, wrong password!";
+//   }
+
+//   return message;
+// }
+
+// function checkStorage(available, ordered) {
+//   let message;
+//   // Change code below this line
+//   if (ordered === 0) {
+//     // Change this line
+//     message = "There are no products in the order!";
+//   } else if (ordered > available) {
+//     // Change this line
+//     message = "Your order is too large, there are not enough items in stock!";
+//   } else {
+//     message = "The order is accepted, our manager will contact you";
+//   }
+
+//   // Change code above this line
+//   return message;
+// }
+
+// const temps = [14, -4, 25, 8, 11];
+
+// // В консолі буде масив
+// console.log(temps);
+// // ❌ Так не спрацює, тому що передаємо цілий масив
+// console.log(Math.max(temps)); // NaN
+
+// // В консолі буде набір окремих чисел
+// console.log(...temps);
+// // ✅ Розподілимо колекцію елементів у якості окремих аргументів
+// console.log(Math.max(...temps)); // 25
+
+const temps = [14, -4, 25, 8, 11];
+// console.log(temps);
+// console.log(Math.max(...temps));
+const copyOfTemps = [...temps];
+console.log(copyOfTemps);
+>>>>>>> Stashed changes
