@@ -1,3 +1,4 @@
+"use strict";
 // const x = 10;
 // const y = 5;
 
@@ -244,8 +245,6 @@
 // }
 // console.log(getReactArea(`8 11`));
 // console.log(getReactArea(`15 11`));
-<<<<<<< Updated upstream
-=======
 
 // function sayHi() {
 //   console.log("Hello, this is my first function!");
@@ -386,9 +385,291 @@
 // // ✅ Розподілимо колекцію елементів у якості окремих аргументів
 // console.log(Math.max(...temps)); // 25
 
-const temps = [14, -4, 25, 8, 11];
-// console.log(temps);
-// console.log(Math.max(...temps));
-const copyOfTemps = [...temps];
-console.log(copyOfTemps);
->>>>>>> Stashed changes
+// const temps = [14, -4, 25, 8, 11];
+// // console.log(temps);
+// // console.log(Math.max(...temps));
+// const copyOfTemps = [...temps];
+
+// let message = "Hi there!";
+
+// if (2 > 0) {
+//   console.log(message);
+// }
+
+// function checkStorage(available, ordered) {
+//   let message;
+//   // Change code below this line
+//   message =
+//     ordered > available
+//       ? "Not enough goods in stock!"
+//       : "The order is accepted, our manager will contact you";
+
+//   // if (ordered > available) {
+//   //   message = "Not enough goods in stock!";
+//   // } else {
+//   //   message = "The order is accepted, our manager will contact you";
+//   // }
+//   console.log(message);
+//   // Change code above this line
+//   return message;
+// }
+
+// function isPositive(number) {
+//   return number > 0 ? "Позитивне число" : "Не позитивне число";
+// }
+
+// console.log(isPositive(5));
+
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   let message;
+//   // Change code below this line
+//   message =
+//     password === "jqueryismyjam"
+//       ? "Access is allowed"
+//       : "Access denied, wrong password!";
+//   // Change code above this line
+//   return message;
+// }
+
+// console.table(checkPassword("jqueryismyjam"));
+// function getSubscriptionPrice(type) {
+//   let price;
+//   // Change code below this line
+
+//   switch (
+//     type // Change this line
+//   ) {
+//     case "starter": // Change this line
+//       price = 0; // Change this line
+//       break;
+
+//     case "professional": // Change this line
+//       price = 20; // Change this line
+//       break;
+
+//     case "organization": // Change this line
+//       price = 50; // Change this line
+//       break;
+
+//     default:
+//       price = undefined;
+//   }
+
+//   // Change code above this line
+//   return price;
+// }
+// console.log(getSubscriptionPrice("_stаrter_"));
+// console.table(getSubscriptionPrice("professional"));
+// console.table(getSubscriptionPrice("organization"));
+// console.log(getSubscriptionPrice("starter"));
+
+// const cruiseControl = {
+//   speed: 0,
+//   brand: "Audi",
+//   accelerate() {
+//     this.speed += 5;
+//     console.log(
+//       `Cruise control speed is succssful accelerated.Curent speed is ${this.speed}`
+//     );
+//   },
+//   decrease() {
+//     this.speed = this.speed === 0 ? 0 : this.speed - 5;
+//     console.log(
+//       `Cruise control speed is succssful decreased.Curent speed is ${this.speed}`
+//     );
+//   },
+// };
+
+// const product = {
+//   name: "IPhone",
+//   price: 50560,
+//   discount(percent) {
+//     return (this.price * (100 - percent)) / 100;
+//   },
+// };
+// const client = {
+//   name: "Alice",
+//   discountPercent: 8,
+//   purchase(purchasedProduct) {
+//     const totalPrice = purchasedProduct.discount(this.discountPercent);
+//     console.log(
+//       `${this.name} придбав товар ${product.name} зі знижкою в ${this.discountPercent}%,сума до сплати ${totalPrice}`
+//     );
+//   },
+// };
+
+// client.purchase(smartphoneProduct);
+// debugger;
+// class Cactus {
+//   constructor(name, color, type) {
+//     this.name = name;
+//     this.color = color;
+//     this.type = type;
+//   }
+//   showCacyusToUser() {
+//     console.dir(this);
+//   }
+// }
+
+// const cactus1 = new Cactus("Stepan", "green", "plant");
+// const cactus2 = new Cactus("Stepan2", "green2", "plan2t");
+
+// cactus1.showCacyusToUser();
+// cactus2.showCacyusToUser();
+
+// function checkPassword(password) {
+//   const ADMIN_PASSWORD = "jqueryismyjam";
+//   let message;
+
+//   switch (true) {
+//     case password === null:
+//       message = "Canceled by user!";
+//       break;
+
+//     case password === ADMIN_PASSWORD:
+//       message = "Welcome!";
+//       break;
+
+//     default:
+//       message = "Access denied, wrong password!";
+//   }
+
+//   // Change code above this line
+//   return message;
+// }
+
+// console.log(checkPassword("mangohackzor"));
+// console.log(checkPassword(null));
+// console.log(checkPassword("polyhax"));
+// console.log(checkPassword("jqueryismyjam"));
+
+// function getShippingCost(country) {
+//   let message;
+//   let price;
+//   // Change code below this line
+
+//   switch (country) {
+//     case "China":
+//       price = 100;
+//       message = `Shipping to ${country} will cost ${price} credits`;
+//       break;
+
+//     case "Chile":
+//       price = 250;
+//       message = `Shipping to ${country} will cost ${price} credits`;
+
+//       break;
+
+//     case "Australia":
+//       price = 170;
+//       message = `Shipping to ${country} will cost ${price} credits`;
+
+//       break;
+
+//     case "Jamaica":
+//       price = 120;
+//       message = `Shipping to ${country} will cost ${price} credits`;
+
+//       break;
+
+//     default:
+//       message = `Sorry, there is no delivery to your country`;
+//   }
+//   // Change code above this line
+//   return message;
+// }
+
+// console.log(getShippingCost("Australia"));
+// console.log(getShippingCost("Germany"));
+// console.log(getShippingCost("China"));
+// console.log(getShippingCost("Chile"));
+// console.log(getShippingCost("Jamaica"));
+// console.log(getShippingCost("Sweden"));
+
+// function getNameLength(name) {
+//   const message = `Name ${name} is ${name.length} characters long`; // Change this line
+
+//   return message;
+// }
+
+// console.log(getNameLength("Poly"));
+// console.log(getNameLength("Harambe"));
+// console.log(getNameLength("Billy"));
+// console.log(getNameLength("Joe"));
+
+// const courseTopic = "JavaScript essentials";
+
+// const courseTopicLength = courseTopic.length;
+// const firstElement = courseTopic[0];
+// const lastElement = courseTopic[courseTopic.length - 1];
+
+// console.log(courseTopicLength);
+// console.log(firstElement);
+// console.log(lastElement);
+
+// function reverseString(str) {
+//   return str.split("").reverse().join("");
+// }
+
+// console.log(reverseString("Hello")); // Виведе "olleH"
+// console.log(reverseString("JavaScript")); // Виведе "tpircSavaJ"
+// console.log(reverseString("OpenAI is awesome")); // Виведе "emosewa si IA nepO"
+
+// const productName = "Repair droid";
+// console.log(productName.slice(3)); // "Repa"
+// console.log(productName.slice(3, 12)); // "air dr"
+// console.log(productName.slice(0, productName.length)); // "Repair droid"
+// console.log(productName.slice(7, productName.length)); // "droid"
+
+// function getSubstring(string, length) {
+//   const substring = string.slice(0, length); // Change this line
+
+//   return substring;
+// }
+// console.log(getSubstring("Hello world", 3));
+// console.log(getSubstring("Hello world", 6));
+// console.log(getSubstring("Hello world", 8));
+// console.log(getSubstring("Hello world", 11));
+// console.log(getSubstring("Hello world", 0));
+
+// function formatMessage(message, maxLength) {
+//   let result;
+//   // Change code below this line
+//   if (message.length <= maxLength) {
+//     return message;
+//   } else {
+//     return message.slice(0, maxLength) + "...";
+//   }
+//   /// Change code above this line
+//   return result;
+// }
+
+// console.log(formatMessage("Curabitur ligula sapien", 16));
+// console.log(formatMessage("Curabitur ligula sapien", 23));
+// console.log(formatMessage("Vestibulum facilisis purus nec", 20));
+// console.log(formatMessage("Vestibulum facilisis purus nec", 30));
+// console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 15));
+// console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 41));
+
+// function normalizeInput(input) {
+//   const normalizedInput = input.toLowerCase(); // Change this line
+
+//   return normalizedInput;
+// }
+
+// console.log(normalizeInput("Hello world"));
+// console.log(normalizeInput("This ISN'T SpaM"));
+// console.log(normalizeInput("Big SALE"));
+
+function checkForName(fullName, name) {
+  const result = fullName.includes(name); // Change this line
+  return result;
+}
+
+console.log(checkForName("Egor Kolbasov", "Egor"));
+console.log(checkForName("Egor Kolbasov", "egor"));
+console.log(checkForName("Egor Kolbasov", "egOr"));
+console.log(checkForName("Egor Kolbasov", "Zhenya"));
+console.log(checkForName("Vadim Nekrasov", "vadim"));
+console.log(checkForName("Vadim Nekrasov", "Dima"));
