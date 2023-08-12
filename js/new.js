@@ -509,20 +509,232 @@
 
     // ==============================Модуль2 Завдання 20/32
 
-//     function calculateTotalPrice(order) {
-//       let total = 0; // Ініціалізуємо змінну total для зберігання загальної суми
+    //     function calculateTotalPrice(order) {
+    //       let total = 0; // Ініціалізуємо змінну total для зберігання загальної суми
 
-//       for (const price of order) {
-//         total += price; // Додаємо кожен елемент масиву до загальної суми
-//       }
+    //       for (const price of order) {
+    //         total += price; // Додаємо кожен елемент масиву до загальної суми
+    //       }
 
-//       return total; // Повертаємо загальну суму
-//     }
-//   ))
-// );
+    //       return total; // Повертаємо загальну суму
+    //     }
+    //   ))
+    // );
 
-// console.log(calculateTotal([12, 85, 37, 4])); // 138
-// console.log(calculateTotal([164, 48, 291])); // 503
-// console.log(calculateTotal([412, 371, 94, 63, 176])); // 1116
+    // console.log(calculateTotal([12, 85, 37, 4])); // 138
+    // console.log(calculateTotal([164, 48, 291])); // 503
+    // console.log(calculateTotal([412, 371, 94, 63, 176])); // 1116
 
-// ==============================Модуль2 Завдання 20/32
+    // ==============================Модуль2 Завдання 21/32
+
+
+    // function findLongestWord(string) {
+    //   // Change code below this line
+    //   const longestWord = string.split(" ").sort((a, b) => b.length - a.length)[0];
+    //   // Change code above this line
+    //   return longestWord;
+    //   // Change code above this line
+    // };
+    // console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+    // console.log(findLongestWord("Google do a roll"));
+    // console.log(findLongestWord("May the force be with you"));
+    // console.log();
+    // console.log();
+    // console.log();
+
+    // ==============================Модуль2 Завдання 22/32
+    
+    //     function createArrayOfNumbers(min, max) {
+    //       const numbers = [];
+    //       // Change code below this line
+    //       for (let i = min; i <= max; i += 1) {
+    //         numbers.push(i);
+    //       }
+    //       // Change code above this line
+    //       return numbers;
+    //     };
+
+    //     console.log();
+    //     console.log();
+    //     console.log();
+    // console.log();
+    
+    // Доповни код функції createArrayOfNumbers(min, max) таким чином, щоб вона повертала масив усіх цілих чисел від значення min до max.
+
+    // Оголошена функція createArrayOfNumbers(min, max)
+    // Виклик функції createArrayOfNumbers(1, 3) повертає [1, 2, 3]
+    // Виклик функції createArrayOfNumbers(14, 17) повертає [14, 15, 16, 17]
+    // Виклик функції createArrayOfNumbers(29, 34) повертає [29, 30, 31, 32, 33, 34]
+    // Виклик функції createArrayOfNumbers() з випадковими min і max повертає правильний масив
+    // В циклі for використовувався метод push
+
+    // ==============================Модуль2 Завдання 23/32
+    
+    
+    // Напиши функцію filterArray(numbers, value), яка приймає масив чисел (параметр numbers) і повертає новий масив, в якому будуть тільки ті елементи масиву numbers, які більші за значення параметра value (число).
+
+    // Оголошена функція filterArray(numbers, value)
+    // Виклик функції filterArray([1, 2, 3, 4, 5], 3) повертає [4, 5]
+    // Виклик функції filterArray([1, 2, 3, 4, 5], 4) повертає [5]
+    // Виклик функції filterArray([1, 2, 3, 4, 5], 5) повертає []
+    // Виклик функції filterArray([12, 24, 8, 41, 76], 38) повертає [41, 76]
+    // Виклик функції filterArray([12, 24, 8, 41, 76], 20) повертає [24, 41, 76]
+    // Виклик функції filterArray() з випадковим масивом і числом повертає правильний масив
+    // В циклі for використовувався метод push
+
+    //     function filterArray(numbers, value) {
+    //       // Change code below this line
+    //       const filteredArray = [];
+    //       for (let i = 0; i < numbers.length; i += 1) {
+    //         if (numbers[i] > value) {
+    //           filteredArray.push(numbers[i]);
+    //         }
+    //       }
+    //       return filteredArray;
+    //       // Change code above this line
+    //     }
+
+    // console.log(filterArray([1, 2, 3, 4, 5], 3));
+    // console.log( filterArray([1, 2, 3, 4, 5], 4));
+    // console.log(filterArray([1, 2, 3, 4, 5], 5));
+    // console.log(filterArray([12, 24, 8, 41, 76], 38));
+    // console.log(filterArray([12, 24, 8, 41, 76], 20));
+
+    // ==============================Модуль2 Завдання 24/32
+
+    //   function checkFruit(fruit) {
+    // const fruits = ["apple", "plum", "pear", "orange"];
+
+    // return fruits.includes(fruit);
+    //   }
+
+
+    //   console.log(checkFruit("plum"));
+    //   console.log( checkFruit("mandarin"));
+    //   console.log(checkFruit("pear"));
+    //   console.log(checkFruit("Pear"));
+    //   console.log(checkFruit("apple"));
+    //   console.log(checkFruit());
+
+    //     Функція checkFruit(fruit) приймає рядок з назвою фрукта (параметр fruit), і перевіряє, чи присутній такий фрукт в масиві fruits.
+
+    // Доповни код функції таким чином, що якщо:
+
+    // фрукт присутній в масиві, то функція повертає true;
+    // фрукт відсутній в масиві, то функція повертає false.
+    // Оголошена функція checkFruit(fruit)
+    // Виклик checkFruit("plum") повертає true
+    // Виклик checkFruit("mandarin") повертає false
+    // Виклик checkFruit("pear") повертає true
+    // Виклик checkFruit("Pear") повертає false
+    // Виклик checkFruit("apple") повертає true
+    // Виклик функції checkFruit() з випадковим словом повертає правильне значення boolean
+    // У функції використовувався метод includes
+
+    // ==============================Модуль2 Завдання 25/32
+    
+    //     Спільними елементами масивів називають ті елементи, які присутні у всіх масивах.
+
+    // Наприклад, у двох масивах [1, 3, 5] і [0, 8, 5, 3] спільними будуть числа 3 і 5, оскільки вони присутні в обох вихідних масивах. А числа 0, 1 і 8 присутні тільки в одному з масивів.
+
+    // Напиши функцію getCommonElements(array1, array2), яка отримує два масиви довільної довжини в параметри array1 і array2, і повертає новий масив, що складається з тих елементів, які присутні в обох вихідних масивах.
+
+    // Оголошена функція getCommonElements(array1, array2)
+    // Виклик getCommonElements([1, 2, 3], [2, 4]) повертає [2]
+    // Виклик getCommonElements([1, 2, 3], [2, 1, 17, 19]) повертає [1, 2]
+    // Виклик getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]) повертає [12, 27, 3]
+    // Виклик getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]) повертає [10, 30, 40]
+    // Виклик getCommonElements([1, 2, 3], [10, 20, 30]) повертає []
+    // Виклик функції getCommonElements() з випадковими двома масивами повертає правильний масив
+    // В циклі for використовувалися методи includes і push
+
+
+    //    function getCommonElements(array1, array2) {
+    //   const commonElements = [];
+
+    //   for (const element of array1) {
+    //     if (array2.includes(element)) {
+    //       commonElements.push(element);
+    //     }
+    //   }
+
+    //   return commonElements;
+    // }
+
+    // console.log(getCommonElements([1, 2, 3], [2, 4]));
+    // console.log(getCommonElements([1, 2, 3], [2, 1, 17, 19]));
+    // console.log(getCommonElements([24, 12, 27, 3], [12, 8, 3, 36, 27]));
+    // console.log(getCommonElements([10, 20, 30, 40], [4, 30, 17, 10, 40]));
+    // console.log(getCommonElements([1, 2, 3], [10, 20, 30]));
+    // console.log();
+    // console.log();
+
+    // ==============================Модуль2 Завдання 26/32
+
+    // function calculateTotalPrice(order) {
+    //   let total = 0;
+    //   // Change code below this line
+
+    //   for (let i = 0; i < order.length; i += 1) {
+    //     total += order[i];
+    //   }
+
+    //   // Change code above this line
+    //   return total;
+    // }
+    //     // __________________________________________________________________________
+    //   //  рефакторинг коду функції calculateTotalPrice(order), замінивши цикл for на for...of
+    //     // ___________________________________________________________________________
+    //     function calculateTotalPrice(order) {
+    //   let total = 0;
+
+    //   for (const price of order) {
+    //     total += price;
+    //   }
+
+    //   return total;
+    // }
+
+    // console.log(calculateTotalPrice([12, 85, 37, 4]));
+    // console.log(calculateTotalPrice([164, 48, 291]));
+    // console.log(calculateTotalPrice([412, 371, 94, 63, 176]));
+    // console.log(calculateTotalPrice([]));
+    // console.log(calculateTotalPrice());
+
+    // ==============================Модуль2 Завдання 27/32
+    
+    //     Виконай рефакторинг функції filterArray(numbers, value), замінивши цикл for на for...of.
+
+    // Оголошена функція filterArray(numbers, value)
+    // Виклик функції filterArray([1, 2, 3, 4, 5], 3) повертає [4, 5]
+    // Виклик функції filterArray([1, 2, 3, 4, 5], 4) повертає [5]
+    // Виклик функції filterArray([1, 2, 3, 4, 5], 5) повертає []
+    // Виклик функції filterArray([12, 24, 8, 41, 76], 38) повертає [41, 76]
+    // Виклик функції filterArray([12, 24, 8, 41, 76], 20) повертає [24, 41, 76]
+    // Виклик функції filterArray() з випадковим масивом і числом повертає правильний масив
+    // Функція filterArray() використовує цикл for..of
+  
+  
+    
+    function filterArray(numbers, value) {
+      // Change code below this line
+      const filteredNumbers = [];
+
+      for (let i = 0; i < numbers.length; i += 1) {
+        const number = numbers[i];
+
+        if (number > value) {
+          filteredNumbers.push(number);
+        }
+      }
+
+      return filteredNumbers;
+      // Change code above this line
+    };
+    
+    console.log(filterArray([1, 2, 3, 4, 5], 3));
+    console.log(filterArray([1, 2, 3, 4, 5], 4));
+    console.log(filterArray([1, 2, 3, 4, 5], 5));
+    console.log(filterArray([12, 24, 8, 41, 76], 38));
+    console.log(filterArray([12, 24, 8, 41, 76], 20));
+    console.log(filterArray());
