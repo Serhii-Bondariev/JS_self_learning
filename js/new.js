@@ -401,8 +401,128 @@
 // console.log(allClients);
 
 // ===============================Завдання 16/32
+// ++++++++++++++++++++++++++++++++++Зразок від GPT
+// function mergeArrays(arr1, arr2) {
+//   // Об'єднуємо масиви за допомогою методу concat()
+//   const mergedArray = arr1.concat(arr2);
 
-function makeArray(firstArray, secondArray, maxLength) {
-  // Change code below this line
-  // Change code above this line
-}
+//   // Видаляємо дублікати за допомогою методу filter()
+//   const uniqueArray = mergedArray.filter((value, index, self) => {
+//     return self.indexOf(value) === index;
+//   });
+
+//   return uniqueArray;
+// }
+
+// const arr1 = [1, 2, 3];
+// const arr2 = [3, 4, 5];
+
+// const mergedArray = mergeArrays(arr1, arr2);
+// console.log(mergedArray); // Виведе: [1, 2, 3, 4, 5]
+
+//////////////////////////////////////////////////////
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//   // Об'єднуємо два вихідних масиви
+//   const mergedArray = firstArray.concat(secondArray);
+
+//   // Перевіряємо, чи кількість елементів в новому масиві не перевищує maxLength
+//   if (mergedArray.length <= maxLength) {
+//     // Якщо кількість елементів менше або дорівнює maxLength,
+//     // повертаємо новий масив повністю
+//     return mergedArray;
+//   } else {
+//     // Якщо кількість елементів більша за maxLength,
+//     // повертаємо копію масиву з обмеженням до maxLength елементів
+//     return mergedArray.slice(0, maxLength);
+//   }
+// }
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// function makeArray(firstArray, secondArray, maxLength) {
+//   // Change code below this line
+//     const mergedArray = firstArray.concat(secondArray);
+
+//     if (mergedArray.length <= maxLength); {
+//         return mergedArray;
+//     } else {
+//         return mergedArray.slice(0, maxLength);
+//   }
+//   // Change code above this line
+// }
+
+// console.log();
+// console.log();
+// console.log();
+// console.log();
+// console.log();
+// console.log();
+// console.log();
+
+//  ===============================Завдання 16/32
+
+// const start = 3;
+// const end = 7;
+
+// for (let i = ; i <= ; i += ) { // Change this line
+//   console.log(i);
+// }
+
+-(
+  // Змініть код нижче цього рядка
+  (-(
+    // Змініть код вище цього рядка
+    // +  // Обчислюємо загальну суму, помножуючи число на 2
+    // +  const total = number * 2;
+    // +
+    // +  // Повертаємо значення загальної суми
+    // +  return total;
+    //  }
+
+    // function calculateTotal(number) {
+    //   // Change code below this line
+    //   // Change code above this line
+    // }function calculateTotal(number) {
+    //   function calculateTotal(number) {
+    //     let total = 0;
+
+    //     for (let i = 1; i <= number; i++) {
+    //       total += i;
+    //     }
+
+    //     return total;
+    //   }
+
+    //   return total;
+    // }
+
+    // ==============================Модуль2 Завдання 19/32
+
+    // const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+    // for (let i = 0; i < fruits.length; i += 1) {
+    //   const fruit = fruits[i];
+    //   console.log(fruit);
+    // }
+
+    // console.log(fruits);
+
+    // ==============================Модуль2 Завдання 20/32
+
+//     function calculateTotalPrice(order) {
+//       let total = 0; // Ініціалізуємо змінну total для зберігання загальної суми
+
+//       for (const price of order) {
+//         total += price; // Додаємо кожен елемент масиву до загальної суми
+//       }
+
+//       return total; // Повертаємо загальну суму
+//     }
+//   ))
+// );
+
+// console.log(calculateTotal([12, 85, 37, 4])); // 138
+// console.log(calculateTotal([164, 48, 291])); // 503
+// console.log(calculateTotal([412, 371, 94, 63, 176])); // 1116
+
+// ==============================Модуль2 Завдання 20/32
