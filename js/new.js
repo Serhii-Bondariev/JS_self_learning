@@ -716,25 +716,60 @@
   
   
     
-    function filterArray(numbers, value) {
-      // Change code below this line
-      const filteredNumbers = [];
+    // function filterArray(numbers, value) {
+    //   // Change code below this line
+    //   const filteredNumbers = [];
 
-      for (let i = 0; i < numbers.length; i += 1) {
-        const number = numbers[i];
+    //  for (const number of numbers) {
+    //     if (number > value) {
+    //       filteredNumbers.push(number);
+    //     }
+    //   }
 
-        if (number > value) {
-          filteredNumbers.push(number);
-        }
-      }
-
-      return filteredNumbers;
-      // Change code above this line
-    };
+    //   return filteredNumbers;
+    //   // Change code above this line
+      
+    // }
     
-    console.log(filterArray([1, 2, 3, 4, 5], 3));
-    console.log(filterArray([1, 2, 3, 4, 5], 4));
-    console.log(filterArray([1, 2, 3, 4, 5], 5));
-    console.log(filterArray([12, 24, 8, 41, 76], 38));
-    console.log(filterArray([12, 24, 8, 41, 76], 20));
-    console.log(filterArray());
+    // console.log(filterArray([1, 2, 3, 4, 5], 3));
+    // console.log(filterArray([1, 2, 3, 4, 5], 4));
+    // console.log(filterArray([1, 2, 3, 4, 5], 5));
+    // console.log(filterArray([12, 24, 8, 41, 76], 38));
+    // console.log(filterArray([12, 24, 8, 41, 76], 20));
+    // console.log(filterArray());
+    // console.log(i);
+
+
+    // ==============================Модуль2 Завдання 28/32;
+
+    // Change code below this line
+//     const a = 3 % 3;
+//     const b = 4 % 3;
+//     const c = 11 % 8;
+//     const d = 12 % 7;
+//     const e = 8 % 6;
+
+// console.log(a);
+// console.log(b);
+// console.log(c);
+// console.log(d);
+// console.log(e);
+
+  // ==============================Модуль2 Завдання 29/32;
+
+  function getEvenNumbers(start, end) {
+    // Change code below this line
+    const evenNumbers = [];
+    for (let i = start; i <= end; i += 1) {
+      if (i % 2 === 0) {
+        evenNumbers.push(i);
+      }
+    }
+  }
+
+   console.log(getEvenNumbers(2, 5));
+   console.log(getEvenNumbers(3, 11));
+   console.log(getEvenNumbers(6, 12));
+   console.log(getEvenNumbers(8, 8));
+   console.log(getEvenNumbers(7, 7));
+   console.log(getEvenNumbers());
