@@ -468,9 +468,9 @@
 //   console.log(i);
 // }
 
--(
+
   // Змініть код нижче цього рядка
-  (-(
+  
     // Змініть код вище цього рядка
     // +  // Обчислюємо загальну суму, помножуючи число на 2
     // +  const total = number * 2;
@@ -757,19 +757,142 @@
 
   // ==============================Модуль2 Завдання 29/32;
 
-  function getEvenNumbers(start, end) {
-    // Change code below this line
-    const evenNumbers = [];
-    for (let i = start; i <= end; i += 1) {
-      if (i % 2 === 0) {
-        evenNumbers.push(i);
-      }
-    }
-  }
+  // function getEvenNumbers(start, end) {
+  //   // Change code below this line
+  //   const evenNumbers = [];
+  //   for (let i = start; i <= end; i += 1) {
+  //     if (i % 2 === 0) {
+  //       evenNumbers.push(i);
+  //     }
+  //   }
+  // }
 
-   console.log(getEvenNumbers(2, 5));
-   console.log(getEvenNumbers(3, 11));
-   console.log(getEvenNumbers(6, 12));
-   console.log(getEvenNumbers(8, 8));
-   console.log(getEvenNumbers(7, 7));
-   console.log(getEvenNumbers());
+  //  console.log(getEvenNumbers(2, 5));
+  //  console.log(getEvenNumbers(3, 11));
+  //  console.log(getEvenNumbers(6, 12));
+  //  console.log(getEvenNumbers(8, 8));
+  //  console.log(getEvenNumbers(7, 7));
+  //  console.log(getEvenNumbers());
+
+ // ==============================Модуль2 Завдання 30/32;
+
+//  Доповни код таким чином, щоб у змінну number записувалося перше число від start до end, яке ділиться на 5 без остачі.
+
+//  Оголошена змінна start зі значенням 6
+//  Оголошена змінна end зі значенням 27
+//  Оголошена змінна number без ініціалізації
+//  Підсумкове значення змінної number дорівнює 10
+//  В циклі for використовується break для виходу до завершення усіх ітерацій циклу
+
+
+//    const start = 6;
+// const end = 27;
+// let number;
+
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+
+
+// ==============================Модуль2 Завдання 31/32;
+
+// Виконай рефакторинг функції findNumber(start, end, divisor) таким чином, щоб вона:
+
+// повертала перше число від start до end, яке ділиться на divisor без остачі
+// не використала оператор break
+// не використала змінну number
+// Оголошена функція findNumber(start, end, divisor)
+// Виклик findNumber(2, 6, 5) повертає 5
+// Виклик findNumber(8, 17, 3) повертає 9
+// Виклик findNumber(6, 9, 4) повертає 8
+// Виклик findNumber(16, 35, 7) повертає 21
+// Виклик findNumber() з випадковим набором чисел повертає правильний результат
+// В циклі for не повинен використовуватися break для виходу до завершення всіх ітерацій циклу
+
+
+// function findNumber(start, end, divisor) {
+//   // Change code below this line
+//   let number;
+
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       number = i;
+//       break;
+//     }
+//   }
+
+//   return number;
+//   // Change code above this line
+// }
+// ===========РІШЕННЯ:=============
+
+// function findNumber(start, end, divisor) {
+//   for (let i = start; i <= end; i++) {
+//     if (i % divisor === 0) {
+//       return i;
+//     }
+//   }
+// }
+
+// // Приклади викликів функції:
+// console.log(findNumber(2, 6, 5));    // 5
+// console.log(findNumber(8, 17, 3));   // 9
+// console.log(findNumber(6, 9, 4));    // 8
+// console.log(findNumber(16, 35, 7));  // 21
+// // Тут ти можеш додати випадкові значення start, end і divisor для перевірки.
+
+// ==============================Модуль2 Завдання 32/32;
+
+// Напиши функцію includes(array, value), яка робить те саме, що і метод масиву масив.includes(значення) - перевіряє, чи присутнє в масиві array значення value, повертаючи true, якщо присутнє, і false в іншому випадку.
+
+// При виконанні цього завдання в тілі функції includes() не можна використовувати метод масив.includes(значення).
+
+// Оголошена функція includes(array, value)
+// Виклик includes([1, 2, 3, 4, 5], 3) повертає true
+// Виклик includes([1, 2, 3, 4, 5], 17) повертає false
+// Виклик includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter") повертає true
+// Виклик includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus") повертає false
+// Виклик includes(["apple", "plum", "pear", "orange"], "plum") повертає true
+// Виклик includes(["apple", "plum", "pear", "orange"], "kiwi") повертає false
+// Виклик includes() для випадкового масиву з випадковим value повертає правильний boolean
+// У функції includes використовується for, return, але не метод масиву includes
+
+
+// function includes(array, value) {
+//   // Change code below this line
+ 
+//   // Change code above this line
+// }
+
+// console.log(includes([1, 2, 3, 4, 5], 3)); // true
+// console.log(includes([1, 2, 3, 4, 5], 17)); // false
+// console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter")); // true
+// console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus")); // false
+// console.log(includes(["apple", "plum", "pear", "orange"], "plum")); // true
+// console.log(includes(["apple", "plum", "pear", "orange"], "kiwi")); // false
+// console.log();
+
+// ==========================РІШЕННЯ==========
+
+// function includes(array, value) {
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] === value) {
+//       return true;
+//     }
+//   }
+  
+//   return false;
+// }
+
+// // Приклади викликів функції:
+// console.log(includes([1, 2, 3, 4, 5], 3)); // true
+// console.log(includes([1, 2, 3, 4, 5], 17)); // false
+// console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Jupiter")); // true
+// console.log(includes(["Earth", "Mars", "Venus", "Jupiter", "Saturn"], "Uranus")); // false
+// console.log(includes(["apple", "plum", "pear", "orange"], "plum")); // true
+// console.log(includes(["apple", "plum", "pear", "orange"], "kiwi")); // false
+// // Тут ти можеш додати виклик includes() з випадковим масивом і значенням для перевірки.
+
