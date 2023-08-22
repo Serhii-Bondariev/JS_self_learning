@@ -863,7 +863,7 @@
 
 // function includes(array, value) {
 //   // Change code below this line
- 
+
 //   // Change code above this line
 // }
 
@@ -883,7 +883,7 @@
 //       return true;
 //     }
 //   }
-  
+
 //   return false;
 // }
 
@@ -895,4 +895,25 @@
 // console.log(includes(["apple", "plum", "pear", "orange"], "plum")); // true
 // console.log(includes(["apple", "plum", "pear", "orange"], "kiwi")); // false
 // // Тут ти можеш додати виклик includes() з випадковим масивом і значенням для перевірки.
+
+// var secondsInAMinute = 60;
+// var minutesInAnHour = 60;
+// var secondsInAnHour = secondsInAMinute * minutesInAnHour;
+// secondsInAnHour;
+
+// var hoursInADay = 24;
+// var secondsInADay = secondsInAnHour * hoursInADay;
+// secondsInADay;
+
+// var secondsInAYear = 365;
+// var secondsInAYear = secondsInADay * secondsInAYear;
+// secondsInAYear;
+// var age = 40;
+// age * secondsInAYear;
+
+// var higthFives = 0;
+// ++higthFives
+
+
+
 
