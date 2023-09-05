@@ -38,18 +38,66 @@
 // console.log(buttons.innerHTML);
 
 
-function filterArray(numbers, value) {
-    // Change code below this line
-    const filteredNumbers = [];
+// function filterArray(numbers, value) {
+//     // Change code below this line
+//     const filteredNumbers = [];
   
-    for (let i = 0; i < numbers.length; i += 1) {
-      const number = numbers[i];
+//     for (let i = 0; i < numbers.length; i += 1) {
+//       const number = numbers[i];
   
-      if (number > value) {
-        filteredNumbers.push(number);
-      }
+//       if (number > value) {
+//         filteredNumbers.push(number);
+//       }
+//     }
+  
+//     return filteredNumbers;
+//     // Change code above this line
+//   }
+
+// Change value of isSuccess variable to call resolve or reject
+// const isSuccess = true;
+
+// const promise = new Promise((resolve, reject) => {
+//   setTimeout(() => {
+//     if (isSuccess) {
+//       resolve("Success! Value passed to resolve function");
+//     } else {
+//       reject("Error! Error passed to reject function");
+//     }
+//   }, 2000);
+// });
+
+// // Will run first
+// console.log("Before promise.then()");
+
+// // Registering promise callbacks
+// promise.then(
+//   // onResolve will run third or not at all
+//   value => {
+//     console.log("onResolve call inside promise.then()");
+//     console.log(value); // "Success! Value passed to resolve function"
+//   },
+//   // onReject will run third or not at all
+//   error => {
+//     console.log("onReject call inside promise.then()");
+//     console.log(error); // "Error! Error passed to reject function"
+//   }
+// );
+
+// // Will run second
+// console.log("After promise.then()");
+
+
+
+// Change value of isSuccess variable to call resolve or reject
+const isSuccess = true;
+
+const promise = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    if (isSuccess) {
+      resolve("Success! Value passed to resolve function");
+    } else {
+      reject("Error! Error passed to reject function");
     }
-  
-    return filteredNumbers;
-    // Change code above this line
-  }
+  }, 2000);
+});
