@@ -1425,7 +1425,6 @@
 // console.log(credentials.password);
 // console.log();
 
-
 // ==============================Модуль3 Завдання 10/41;
 
 // ================THEORY================
@@ -1525,7 +1524,7 @@
 //     console.log(book[key]);
 //   }
 
-  // Якщо це невласна властивість - нічого не робимо
+// Якщо це невласна властивість - нічого не робимо
 // }
 
 // ====================END-THEORY==================
@@ -1571,12 +1570,9 @@
 // console.log(keys);
 // console.log(values);
 
-
 // ==============================Модуль3 Завдання 12/41;
 
 // ================THEORY================
-
-
 
 // ====================END-THEORY==================
 
@@ -1609,7 +1605,6 @@
 // console.log(countProps({}));
 // console.log(countProps({ name: "Mango", age: 2 }));
 // console.log(countProps({ mail: "poly@mail.com", isOnline: true, score: 500 }));
-
 
 // ==============================Модуль3 Завдання 13/41;
 
@@ -1667,7 +1662,7 @@
 //   price: 2153,
 // };
 // const values = [];
-// // Change code below this 
+// // Change code below this
 // const keys = Object.keys(apartment);
 // for (const key of keys) {
 //   values.push(apartment[key]);
@@ -1678,7 +1673,6 @@
 // console.log(keys);
 // console.log(values);
 // console.log();
-
 
 // ==============================Модуль3 Завдання 14/41;
 
@@ -1699,7 +1693,6 @@
 // Функція підраховує тільки власні властивості об'єкта
 // Функція використовує метод Object.keys() і, можливо, цикл for...of
 
-
 // function countProps(object) {
 //   // Change code below this line
 //   const keys = Object.keys(countProps)
@@ -1715,7 +1708,7 @@
 //   // Change code above this line
 //   const keys = Object.keys(object);
 //   return keys.length;
-  
+
 // }
 
 // =============END-EXERCISE=============
@@ -1728,7 +1721,6 @@
 //   return propCount;
 //   // Change code above this line
 // }
-
 
 // ==============================Модуль3 Завдання 15/41;
 
@@ -1776,7 +1768,6 @@
 // const keys = Object.keys(apartment);
 // const values = Object.values(apartment);
 
-
 // ==============================Модуль3 Завдання 16/41;
 
 // ================THEORY================
@@ -1799,7 +1790,6 @@
 
 // ==============SOLUTION================
 
-
 // function countTotalSalary(salaries) {
 //   let totalSalary = 0;
 
@@ -1812,11 +1802,9 @@
 //   return totalSalary;
 // }
 
-
 // console.log(countTotalSalary({}));
 // console.log(countTotalSalary({ mango: 100, poly: 150, alfred: 80 }));
 // console.log(countTotalSalary({ kiwi: 200, poly: 50, ajax: 150 }));
-
 
 // ==============================Модуль3 Завдання 17/41;
 
@@ -1892,7 +1880,6 @@
 // console.log(rgbColors);
 // console.log();
 
-
 // ==============================Модуль3 Завдання 18/41;
 
 // ================THEORY================
@@ -1935,7 +1922,6 @@
 // console.log(getProductPrice("Scanner"));
 // console.log(getProductPrice("Droid"));
 // console.log(getProductPrice("Engine"));
-
 
 // ==============================Модуль3 Завдання 19/41;
 
@@ -2031,14 +2017,11 @@
 //   // Change code above this line
 // }
 
-
-
 // console.log(calculateTotalPrice("Blaster"));
 // console.log(calculateTotalPrice("Radar"));
 // console.log(calculateTotalPrice("Droid"));
 // console.log(calculateTotalPrice("Grip"));
 // console.log(calculateTotalPrice("Scanner"));
-
 
 // ==============================Модуль3 Завдання 21/41;
 
@@ -2104,8 +2087,6 @@
 // // Change code below this line
 // const { yesterday, today, tomorrow } = highTemperatures;
 
-
-
 // // Change code above this line
 // const meanTemperature = (yesterday + today + tomorrow) / 3;
 
@@ -2114,7 +2095,6 @@
 // console.log(today);
 // console.log(tomorrow);
 // console.log(highTemperatures);
-
 
 // ==============================Модуль3 Завдання 22/41;
 
@@ -2137,8 +2117,6 @@
 // console.log(title); // "The Last Kingdom"
 // console.log(author); // "Bernard Cornwell"
 // console.log(coverImage); // "https://via.placeholder.com/640/480"
-
-
 
 // ===============END-THEORY=============
 
@@ -2180,7 +2158,6 @@
 // console.log(tomorrow);
 // console.log(icon);
 
-
 // ==============================Модуль3 Завдання 23/41;
 
 // ================THEORY================
@@ -2213,8 +2190,6 @@
 // console.log(secondTitle); // Сон смішної людини
 // console.log(secondCoverImage); // https://via.placeholder.com/640/480
 // Такий запис читається як «Створити змінну firstTitle, в яку помістити значення властивості title з об'єкта firstBook» тощо.
-
-
 
 // ===============END-THEORY=============
 
@@ -2252,7 +2227,6 @@
 // console.log(highYesterday);
 // console.log(highToday);
 // console.log(highTomorrow);
-
 
 // ==============================Модуль3 Завдання 24/41;
 
@@ -2294,7 +2268,6 @@
 //   console.log(author);
 //   console.log(rating);
 
-
 // ===============END-THEORY=============
 
 // ================EXERCISE==============
@@ -2333,7 +2306,6 @@
 // console.log(colors);
 // console.log(hexColors);
 // console.log(rgbColors);
-
 
 // ==============================Модуль3 Завдання 25/41;
 
@@ -2401,7 +2373,6 @@
 //   },
 // };
 
-
 // const {
 //   today: { high: highToday, low: lowToday, icon: todayIcon = "https://www.flaticon.com/svg/static/icons/svg/861/861059.svg" },
 //   tomorrow: { high: highTomorrow, low: lowTomorrow, icon: tomorrowIcon = "https://www.flaticon.com/svg/static/icons/svg/2204/2204346.svg" },
@@ -2417,7 +2388,6 @@
 // console.log(lowTomorrow);
 // console.log(tomorrowIcon);
 // console.log();
-
 
 // ==============================Модуль3 Завдання 26/41;
 
@@ -2466,7 +2436,7 @@
 // function doStuffWithBook({ title, numberOfPages, downloads, rating, public }) {
 //   console.log(title);
 //   console.log(numberOfPages);
-  // І так далі
+// І так далі
 // }
 
 // ===============END-THEORY=============
@@ -2500,13 +2470,11 @@
 //     tomorrow: { low: tomorrowLow, high: tomorrowHigh },
 //   } = forecast;
 
-  
 // // Change code below this line
 //   // Change code above this line
 
 //   return (todayLow + todayHigh + tomorrowLow + tomorrowHigh) / 4;
 // }
-
 
 // ==============================Модуль3 Завдання 27/41;
 
@@ -2562,7 +2530,6 @@
 // console.log(bestScore);
 // console.log(worstScore);
 
-
 // ==============================Модуль3 Завдання 28/41;
 
 // ================THEORY================
@@ -2615,14 +2582,9 @@
 // const bestScore = Math.max(...allScores);
 // const worstScore = Math.min(...allScores);
 
-
-
-
 // ==============================Модуль3 Завдання 30/41;
 
 // ================THEORY================
-
-
 
 // ===============END-THEORY=============
 
@@ -2652,7 +2614,7 @@
 //   const completed = false;
 //   const category = "General";
 //   const priority = "Normal";
-  
+
 //   // Створюємо новий об'єкт завдання і присвоюємо значення з параметру data
 //   const task = {
 //     category: data.category || category, // Використовуємо значення за замовчуванням, якщо category відсутня в data
@@ -2664,9 +2626,108 @@
 //   return task;
 // }
 
-
 // console.log(makeTask({}));
 // console.log(makeTask({ category: "Homemade", priority: "Low", text: "Take out the trash" }));
 // console.log(makeTask({ category: "Finance", text: "Take interest" }) );
 // console.log(makeTask({ priority: "Low", text: "Choose shampoo" }));
 // console.log(makeTask({ text: "Buy bread" }));
+
+// ==============================Модуль3 Завдання 31/41;
+
+// ================THEORY================
+// Операція ... (rest) дозволяє зібрати групу незалежних елементів у нову колекцію. Синтаксично - це близнюк операції розподілу, але відрізнити їх просто - розподіл - коли ... знаходиться у правій частині операції присвоювання, а збирання - коли ... знаходиться в її лівій частині.
+
+// Повернемось до аналогії з яблуками. Якщо на підлозі лежать яблука і у нас є порожній ящик, то операція rest дозволить «зібрати» яблука в ящик. Водночас, оригінальні яблука залишаться на підлозі, а в ящику буде копія кожного яблука.
+
+// Одна зі сфер застосування операції rest - це створення функцій, які можуть приймати будь-яку кількість аргументів.
+
+// // Як оголосити параметри функції таким чином,
+// // щоб можна було передати будь-яку кількість аргументів?
+// function multiply() {
+//   // ...
+// }
+
+// multiply(1, 2);
+// multiply(1, 2, 3);
+// multiply(1, 2, 3, 4);
+// Якщо прибрати увесь «синтаксичний шум» і подивитися на аргументи і параметри функції, то аргументи знаходяться у правій частині операції присвоювання, а параметри - у лівій, тому що значення аргументів присвоюються оголошеним параметрам. Отже, можна «зібрати» всі аргументи функції в один параметр, використовуючи операцію rest.
+
+// function multiply(...args) {
+//   console.log(args); // масив усіх аргументів
+// }
+
+// multiply(1, 2);
+// multiply(1, 2, 3);
+// multiply(1, 2, 3, 4);
+// Ім'я параметра може бути довільним. Найчастіше його називають args, restArgs або otherArgs - скорочено від arguments.
+// ===============END-THEORY=============
+
+// ================EXERCISE==============
+// Використовуючи операцію rest, доповни код функції add() таким чином, щоб вона приймала будь-яку кількість аргументів, рахувала і повертала їх суму.
+
+// Оголошена функція add
+// Функція add використовує параметр args
+// Для збирання аргументів у змінну args, у підписі функції використовується синтаксис ... (оператор rest)
+// Виклик add(15, 27) повертає 42
+// Виклик add(12, 4, 11, 48) повертає 75
+// Виклик add(32, 6, 13, 19, 8) повертає 78
+// Виклик add(74, 11, 62, 46, 12, 36) повертає 241
+// =============END-EXERCISE=============
+
+// ==============SOLUTION================
+// Change code below this line
+// function add(...args) {
+//   return args.reduce((acc, cur) => acc + cur);
+// }
+
+// console.log(add(15, 27));
+// console.log(add(12, 4, 11, 48));
+// console.log(add(32, 6, 13, 19, 8));
+// console.log(add(74, 11, 62, 46, 12, 36));
+
+// ==============================Модуль3 Завдання 32/41;
+
+// ================THEORY================
+// Операція ... (rest) також дозволяє зібрати в масив тільки ту частину аргументів, яка необхідна, оголосивши параметри до «збирання».
+
+// function multiply(firstNumber, secondNumber, ...otherArgs) {
+//   console.log(firstNumber); // Значення першого аргументу
+//   console.log(secondNumber); // Значення другого аргументу
+//   console.log(otherArgs); // Масив інших аргументів
+// }
+
+// multiply(1, 2);
+// multiply(1, 2, 3);
+// multiply(1, 2, 3, 4);
+// Всі агументи, для яких будуть оголошені параметри, передадуть їм свої значення, інші аргументи будуть поміщені в масив. Операція rest збирає решту усіх аргументів, а тому повинна бути останньою у підписі функції, інакше виникне помилка.
+// ===============END-THEORY=============
+
+// ================EXERCISE==============
+// Функція addOverNum() рахує суму всіх аргументів. Зміни параметри і тіло функції addOverNum() таким чином, щоб вона рахувала суму тільки тих аргументів, які більші за задане число. Це число повинно бути першим параметром функції.
+
+// Оголошена функція addOverNum()
+// Виклик addOverNum(50, 15, 27) повертає 0
+// Виклик addOverNum(10, 12, 4, 11, 48, 10, 8) повертає 71
+// Виклик addOverNum(15, 32, 6, 13, 19, 8) повертає 51
+// Виклик addOverNum(20, 74, 11, 62, 46, 12, 36) повертає 218
+// =============END-EXERCISE=============
+
+// ==============SOLUTION================
+// Change code below this line
+
+function addOverNum(...args) {
+  let total = 0;
+
+  for (const arg of args) {
+    total += arg;
+  }
+
+  return total;
+
+  // Change code above this line
+}
+
+console.log(addOverNum(50, 15, 27));
+console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+console.log(addOverNum(15, 32, 6, 13, 19, 8));
+console.log(addOverNum(20, 74, 11, 62, 46, 12, 36));
