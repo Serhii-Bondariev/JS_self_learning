@@ -2715,19 +2715,72 @@
 // ==============SOLUTION================
 // Change code below this line
 
-function addOverNum(...args) {
-  let total = 0;
+// function addOverNum(...args) {
+//   let total = 0;
 
-  for (const arg of args) {
-    total += arg;
-  }
+//   for (const arg of args) {
+//     total += arg;
+//   }
 
-  return total;
+//   return total;
 
-  // Change code above this line
+//   // Change code above this line
+// }
+
+// console.log(addOverNum(50, 15, 27));
+// console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
+// console.log(addOverNum(15, 32, 6, 13, 19, 8));
+// console.log(addOverNum(20, 74, 11, 62, 46, 12, 36));
+// const atTheOldToad = {
+//   potions: ["Speed potion", "Dragon breath", "Stone skin"],
+//   removePotion(potionName) {
+//     // Change code below this line
+//     this.potions.splice(this.potions.indexOf(potionName), 1);
+//     // Change code above this line
+//   },
+// };
+
+// function deliverPizza(pizzaName) {
+//   return `Delivering ${pizzaName} pizza.`;
+// }
+
+// function makePizza(pizzaName) {
+//   return `Pizza ${pizzaName} is being prepared, please wait...`;
+// }
+
+// // Chande code below this line
+// function makeMessage(pizzaName, callback) {
+//   return callback(pizzaName);
+// }
+
+// console.log(makeMessage("Royal Grand", deliverPizza));
+// console.log(makeMessage("Ultracheese", makePizza));
+
+// function registerGuest(name, callback) {
+//   console.log(`Реєструємо гостя ${name}.`);
+//   callback(name);
+// }
+
+// // Передаємо інлайн-функцію greet у якості колбека
+// registerGuest("Mango", function greet(name) {
+//   console.log(`Ласкаво просимо ${name}.`);
+// });
+
+// // Передаємо інлайн-функцію notify у якості колбека
+// registerGuest("Poly", function notify(name) {
+//   console.log(`Шановний(а) ${name}, ваш номер буде готовий за 30 хвилин.`);
+// });
+
+function makePizza(pizzaName, callback) {
+  console.log(`Pizza ${pizzaName} is being prepared, please wait...`);
+  callback(pizzaName);
 }
 
-console.log(addOverNum(50, 15, 27));
-console.log(addOverNum(10, 12, 4, 11, 48, 10, 8));
-console.log(addOverNum(15, 32, 6, 13, 19, 8));
-console.log(addOverNum(20, 74, 11, 62, 46, 12, 36));
+makePizza("Royal Grand", function deliverPizza(pizzaName) {
+  console.log(`Delivering pizza ${pizzaName}.`);
+});
+// Change code below this line
+
+makePizza("Ultracheese", function pizzaIsReady(pizzaName) {
+  console.log(`Pizza ${pizzaName} is ready.`);
+});
