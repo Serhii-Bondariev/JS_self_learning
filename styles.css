@@ -55,7 +55,7 @@ img {
 }
 
 /* Указываем понятную периодичность в потоке данных у article*/
-article > * + * {
+article>*+* {
   margin-top: 1em;
 }
 
@@ -77,124 +77,19 @@ select {
     scroll-behavior: auto !important;
   }
 }
-.gallery-item{
-    max-height: 600px;
-    
-}
 
-
-body  {
-  background-color: #E5F9E0;
-  padding: 20px 20px;
-}
-
-.main-heading{
-text-align: center;
-color: #664147;
-}
-.main_text{
-text-align: center;
-color: #664147;
-}
-.main_section{
-  border: 4px;
-  border-style: solid red;
-  margin-bottom: 30px;
-}
-.conatainer{
-  background-color: #A3F7B5;
-padding: 40px, 50px;}
-
-.button_list{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  gap: 20px;
-
-}
-
-.main_text_div{
-  border: color(srgb red green blue) 3px;
+/* Стилі для галереї */
+.cocktail-card {
+  width: 344px;
+  height: 523px;
+  flex-shrink: 0;
   border-radius: 20px;
-max-width: 500px;
+  background: #FDFDFF;
+  box-shadow: 0px 4px 46px 0px rgba(0, 0, 0, 0.05);
 }
 
-.button_l{
-  background-color: rgb(102, 118, 219);
-  border-radius: 5px;
-}
-
-.button_s{
-  background-color: rgb(157, 225, 22);
-  border-radius: 50%;
-  min-height: 70px;
-  border: none;
-  
-}
-
-.gallery_car{
-  min-height: 400px;
-  background-color: #40C9A2;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+.cocktail-card img {
+  min-width: 344px;
+  min-height: 523px;
 
 }
-
-.footer-social-title {
-  text-align: center;
-  font-style: 500;
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  margin-bottom: 16px;
-  font-weight: 500;
-}
-
-.footer-container {
-  max-width: 552px;
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 72px;
-  column-gap: 24px;
-}
-
-.container-foorer-logo {
-  text-align: start;
-}
-
-.footer-subscription-form {
-  column-gap: 24px;
-  display: flex;
-}
-.footer-form-input {
-  width: 264px;
-  margin-bottom: 0;
-}
-.footer-dscr {
-  color: var(--background-white);
-  font-size: 16px;
-  line-height: 1.5;
-  display: block;
-  width: 264px;
-  max-width: 268px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: start;
-}
-.footer-social-title {
-  font-style: 500;
-  color: #ffffff;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  margin-bottom: 16px;
-  font-weight: 500;
-}
-

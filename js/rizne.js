@@ -1,103 +1,30 @@
+// URL запиту до API
+const apiUrl =
+  "https://drinkify.b.goit.study/api/v1/ingredients/64aebb7f82d96cc69e0eb4a5";
 
- // const myAge = 30;
-// alert(myAge);
+// Заголовок запиту
+const headers = {
+  Accept: "application/json",
+};
 
-// let userColorIEyes = 'blue';
-// let user = 'John';
-// let userName = user;
-
-// if (condition) {
-//     userColorIEyes === 'blue';
-//     return message "I know you John";
-// } else {
-//     return message "I don't know you! Get lost!";
-// };
-
-// console.log(userColorIEyes);
-
-// let userColorIEyes = "blue";
-// let user = "John";
-// let userName = user;
-// let anotherColorEyes = "green";
-// let anotherUserName = "Pete";
-// let coPilot =anotherUserName;
-
-// userColorIEyes === "blue"
-//   ? console.log("I know you " + userName) : console.log("hello " + coPilot);
-
-//   prompt("hello " + anotherUserName);
-// const headingElement = document.getElementById("footer-dscr");{
-// let headingElement = document.getElementById("footer-dscr");
-// console.log(headingElement.innerHTML);
-// let newHeadingText = prompt("Please provide a new heading:");
-// headingElement.innerHTML = newHeadingText;
-// }
-
-// const buttons = document.getElementsById("button5");
-// let buttons = document.getElementsById("button5");
-// console.log(buttons.innerHTML);
-
-
-// function filterArray(numbers, value) {
-//     // Change code below this line
-//     const filteredNumbers = [];
-  
-//     for (let i = 0; i < numbers.length; i += 1) {
-//       const number = numbers[i];
-  
-//       if (number > value) {
-//         filteredNumbers.push(number);
-//       }
-//     }
-  
-//     return filteredNumbers;
-//     // Change code above this line
-//   }
-
-// Change value of isSuccess variable to call resolve or reject
-// const isSuccess = true;
-
-// const promise = new Promise((resolve, reject) => {
-//   setTimeout(() => {
-//     if (isSuccess) {
-//       resolve("Success! Value passed to resolve function");
-//     } else {
-//       reject("Error! Error passed to reject function");
-//     }
-//   }, 2000);
-// });
-
-// // Will run first
-// console.log("Before promise.then()");
-
-// // Registering promise callbacks
-// promise.then(
-//   // onResolve will run third or not at all
-//   value => {
-//     console.log("onResolve call inside promise.then()");
-//     console.log(value); // "Success! Value passed to resolve function"
-//   },
-//   // onReject will run third or not at all
-//   error => {
-//     console.log("onReject call inside promise.then()");
-//     console.log(error); // "Error! Error passed to reject function"
-//   }
-// );
-
-// // Will run second
-// console.log("After promise.then()");
-
-
-
-// Change value of isSuccess variable to call resolve or reject
-const isSuccess = true;
-
-const promise = new Promise((resolve, reject) => {
-  setTimeout(() => {
-    if (isSuccess) {
-      resolve("Success! Value passed to resolve function");
+// Виконуємо GET-запит за допомогою fetch
+fetch(apiUrl, { method: "GET", headers: headers })
+  .then((response) => {
+    // Перевіряємо статус відповіді
+    if (response.status === 200) {
+      // Парсимо JSON-відповідь
+      return response.json();
     } else {
-      reject("Error! Error passed to reject function");
+      // Обробка помилки, наприклад, виведення повідомлення про помилку
+      throw new Error("Не вдалося отримати дані про інгредієнт");
     }
-  }, 2000);
-});
+  })
+  .then((data) => {
+    // Отримані дані доступні в змінній `data`
+    console.log("Дані про інгредієнт:", data);
+    // Тут ви можете виконати додаткову обробку даних
+  })
+  .catch((error) => {
+    // Обробка помилок
+    console.error("Помилка:", error);
+  });
